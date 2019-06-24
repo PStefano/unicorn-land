@@ -1,0 +1,235 @@
+* {
+    box-sizing: border-box;
+    transition-duration: 0.3s;
+}
+
+/* Applying the main font to the body, removing the margin and adding the background image */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-image: url("../img/background.png");
+}
+
+/* Applying the same font for each header */
+
+h1,
+h2,
+h3,
+h4 {
+    margin: 0;
+    font-family: 'Courgette', cursive;
+}
+
+/* Header becomes a flex to space the 2 elements in it, applying a background color and padding */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #C55394;
+    color: white;
+    align-items: center;
+    height: 80px;
+    padding: 0 2rem;
+}
+
+/* Giving some set proportions to the nav so that the elements inside it will be center within the header's height */
+
+nav {
+    height: 80px;
+    width: 24.5rem;
+    height: 100%;
+}
+
+/* Unordered list with the navigation menu that becomes a flex to make the <a> appear side by side */
+
+ul {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/* Changing the text and added padding in order to have the a in full height */
+
+a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    padding: 32px 20px;
+}
+
+/* Hover on the <a> tag changes the background color */
+
+a:hover {
+    background-color: #EB43A3;
+}
+
+/* h2 contains a background image with a rainbow, proportions are added to make it look as in the screenshot */
+
+h2 {
+    background-image: url("../img/rainbow.png");
+    background-repeat: no-repeat;
+    background-position: 0 3rem;
+    text-align: center;
+    margin: auto;
+    color: #C55394;
+    padding-top: 120px;
+    height: 190px;
+    width: 600px;
+}
+
+/* Applying the same colour the both h tags */
+
+h3,
+h4 {
+    color: #EB43A3;
+}
+
+h3 {
+    font-size: 2rem;
+    margin-bottom: 50px;
+}
+
+/* Main gets a specific width with a background colour, a border radius and a shadow */
+
+main {
+    width: 1000px;
+    margin: auto;
+    background-color: white;
+    padding: 5rem 2rem;
+    border-radius: 20px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
+}
+
+#concept,
+#unicorns {
+    margin-bottom: 80px;
+}
+
+/* Unicorns section containing the images is in display flex so that they appear side by side */
+
+#unicorns article {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Figure is position relative in order to put the figcaption inside of it */
+
+figure {
+    position: relative;
+    width: 22%;
+    margin: 0;
+}
+
+/* Scaling effect on hover */
+
+figure:hover {
+    transform: scale(1.2);
+}
+
+/* Image maintains the size of the figure element */
+
+img {
+    height: 100%;
+    width: 100%;
+}
+
+/* Adjusting the figcaption so it is placed at the bottom of the image with a black (0.8 opacity) background colour */
+
+figcaption {
+    color: white;
+    text-align: center;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 45px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+#findUs>section {
+    display: flex;
+    justify-content: space-between;
+}
+
+#findUs>section article {
+    width: 450px;
+    height: 450px;
+}
+
+h4+p {
+    display: flex;
+    flex-direction: column;
+}
+
+iframe {
+    height: 100%;
+    width: 100%;
+}
+
+article>section>h4 {
+    margin-top: 20px;
+}
+
+section+section>h4 {
+    margin-top: 60px;
+}
+
+/* Applying flex to the form to get the mail input and button in the right position */
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100px;
+}
+
+[type="email"] {
+    padding: 10px 20px;
+    width: 40%;
+}
+
+/* Modifying the style of the submit button */
+
+[type="submit"] {
+    width: 30%;
+    color: white;
+    padding: 10px 20px;
+    border: 2px solid #E577B5;
+    border-radius: 10px;
+    background-color: #EB43A3;
+    cursor: pointer;
+    font-size: 1.05rem;
+    font-weight: bold;
+}
+
+p {
+    font-size: 0.9rem;
+}
+
+/* Footer is in position relative in order to apply an absolute position to the element inside of it */
+
+footer {
+    position: relative;
+    background-color: #E577B5;
+    height: 50px;
+    margin-top: 50px;
+}
+
+/* Positioning the paragraph at the center of the height and the right of the width, transform helps centering it */
+
+footer>p {
+    color: white;
+    margin: 0;
+    position: absolute;
+    transform: translate(0, -50%);
+    top: 50%;
+    right: 20px;
+}
